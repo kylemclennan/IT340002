@@ -1,0 +1,24 @@
+    1  */10 * * * * /home/sudo apt-get check && sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove && sudo apt-get autoclean
+    2  */15 * * * * root apt-get update > /home/ravexina/out.log
+    3  git clone
+    4  git clone https://github.com/kylemclennan/IT340002.git
+    5  git add .
+    6  gitadd .
+    7  ls
+    8  cd IT340002
+    9  cd ../
+   10  ls
+   11  mv mywork.txt IT2400002
+   12  cd IT340002
+   13  ls
+   14  cdcd ../
+   15  ls
+   16  cd ../
+   17  ls
+   18  cd IT240002
+   19  ls
+   20  cd IT2400002
+   21  mv IT240002 IT340002
+   22  nano IT240002
+   23  ls
+   24  history > myfile.txt
