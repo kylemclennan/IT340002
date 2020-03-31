@@ -1,0 +1,48 @@
+    1  sudo apt-get install postfix mailutil -y
+    2  sudo apt-get install postfix mailutils -y
+    3  sudo nano /etc/postfix/sas1_passwd
+    4  sudo nano /etc/postfix/sasl_passwd
+    5  sudo chmod 600 /etc/postfix/sasl_passwd
+    6  sudo nano /etc/postfix/main.cf
+    7  sudo postmap /etc/postfix/sasl_passwd
+    8  sudo nano /etc/aliases
+    9  sudo ufw allow 587
+   10  sudo systemctl restart postfix
+   11  echo "Postfix email" | mail -s "Email from `hostname`" root
+   12  echo "Postfix email" | mail -s "Email from `hostname`" ktlemtestemail@gmail.com
+   13  echo "Postfix email" | mail -s "Email from `hostname`" kylemtestemail@gmail.com
+   14  sudo nano /etc/postfix/sasl_passwd
+   15  sudo nano /etc/postfix/main.cf
+   16  sudo nano /etc/aliases
+   17  echo "Postfix email" | mail -s "Email from `hostname`" root
+   18  sudo nano /etc/postfix/sasl_passwd
+   19  sudo chmod 600 /etc/postfix/sasl_passwd
+   20  sudo nano /etc/postfix/main.cf
+   21  sudo postmap /etc/postfix/sasl_passwd
+   22  sudo ufw allow 587
+   23  sudo systemctl restart postfix
+   24  echo "Postfix email" | mail -s "Email from `hostname`" root
+   25  sudo nano /etc/postfix/sasl_passwd
+   26  sudo chmod 600 /etc/postfix/sasl_passwd
+   27  sudo nano /etc/postfix/main.cf
+   28  sudo postmap /etc/postfix/sasl_passwd
+   29  sudo nano /etc/aliases
+   30  sudo newaliases
+   31  sudo ufw allow 587
+   32  sudo systemctl restart postfix
+   33  echo "Postfix email" | mail -s "Email from `hostname`" root
+   34  echo "Postfix email" | mail -s "Email from `hostname`" km653@njit.edu
+   35  History > myhistory.txt
+   36  History> myhistory.txt
+   37  History > myhistory.txt
+   38  git clone https://github.com/kylemclennan/IT340002.git
+   39  ls
+   40  mv myhistory.txt IT340002
+   41  ls
+   42  cd IT340002
+   43  ls
+   44  git add .
+   45  git commit -m "Email Lab History"
+   46  git push origin master
+   47  History > emailhistory.txt
+   48  history > myhistory.txt
