@@ -1,0 +1,32 @@
+$TTL 604800
+@ IN SOA ns1.KyleServer.local. root.KyleServer.local. (
+3 ; Serial
+604800 ; Refresh
+86400 ; Retry
+2419200 ; Expire
+604800 ) ; Negative Cache TTL
+;
+;@ IN NS localhost.
+;@ IN A 127.0.0.1
+;@ IN AAAA ::1
+
+;Name Server Information
+
+@ IN NS ns1.KyleServer.local.
+
+;IP address of Name Server
+
+ns1 IN A 192.168.1.19
+
+;Mail Exchanger
+
+KyleServer.local. IN MX 10 mail.KyleServer.local.
+
+;A – Record HostName To Ip Address
+
+www IN A 192.168.0.100
+mail IN A 192.168.0.150
+
+;CNAME record
+
+ftp IN CNAME www.KyleServer.local.
