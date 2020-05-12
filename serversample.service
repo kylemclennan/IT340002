@@ -1,0 +1,7 @@
+[Service]
+ExecStart=/var/www/html/test.html
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
